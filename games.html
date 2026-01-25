@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games - RetroVerse Arcade</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body data-theme="dark">
+
+    <div class="scroll-top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
+
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo"><i class="fa-solid fa-gamepad"></i> RetroVerse</a>
+                <button class="menu-toggle"><i class="fa-solid fa-bars"></i></button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="games.html" class="active">Games</a></li>
+                    <li><a href="parties.html">Parties</a></li>
+                    <li><a href="location.html">Location</a></li>
+                </ul>
+                <button class="theme-toggle"><i class="fa-solid fa-sun"></i></button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container" style="padding-top: 100px;">
+        <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 20px;">Our Game Collection</h2>
+        <p style="text-align: center; margin-bottom: 40px; opacity: 0.8;">From the 80s classics to modern immersive
+            experiences.</p>
+
+        <div class="games-grid">
+            <div class="card">
+                <div class="card-img-placeholder"><i class="fa-brands fa-space-awesome"></i></div>
+                <div class="card-content">
+                    <h3 class="card-title">Space Invaders</h3>
+                    <p>Defend the earth from the pixelated invasion. A timeless classic.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img-placeholder"><i class="fa-solid fa-puzzle-piece"></i></div>
+                <div class="card-content">
+                    <h3 class="card-title">Tetris Giant</h3>
+                    <p>The puzzle game you love, but huge. Stack blocks with massive joysticks.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img-placeholder"><i class="fa-solid fa-dragon"></i></div>
+                <div class="card-content">
+                    <h3 class="card-title">Mortal Kombat II</h3>
+                    <p>Test your might. The definitive fighting game experience.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img-placeholder"><i class="fa-solid fa-music"></i></div>
+                <div class="card-content">
+                    <h3 class="card-title">Dance Dance Revolution</h3>
+                    <p>Move your feet to the beat. High energy rhythm action.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img-placeholder"><i class="fa-solid fa-gun"></i></div>
+                <div class="card-content">
+                    <h3 class="card-title">Time Crisis 4</h3>
+                    <p>Cover, aim, and reload. The ultimate light gun shooter.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img-placeholder"><i class="fa-solid fa-motorcycle"></i></div>
+                <div class="card-content">
+                    <h3 class="card-title">Mario Kart Arcade</h3>
+                    <p>Race against your favorite characters in this arcade exclusive.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <h2 class="text-center">What Players Say</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                    <p>"The game selection is insane. I found games I haven't played since I was a kid!"</p>
+                    <h4 style="margin-top: 15px;">- Chris P.</h4>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                    <p>"Everything works perfectly. No stuck buttons or broken screens. Love it."</p>
+                    <h4 style="margin-top: 15px;">- Jamie K.</h4>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                    <p>"The racing sims are next level. Me and my friends race here every weekend."</p>
+                    <h4 style="margin-top: 15px;">- Taylor S.</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="container section-padding">
+        <div class="newsletter-box">
+            <h2>Join the VIP Club</h2>
+            <p>Get exclusive coupons, early access to new games, and invites to member-only tournaments.</p>
+            <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Welcome to the club!');">
+                <input type="email" class="newsletter-input" placeholder="Enter your email" required>
+                <button type="submit" class="btn btn-light">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo" style="margin-bottom: 15px; display: inline-block;">RetroVerse</a>
+                    <p>The ultimate destination for arcade gaming, parties, and retro vibes.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="games.html">Games</a></li>
+                        <li><a href="parties.html">Parties</a></li>
+                        <li><a href="location.html">Location</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p>123 Neon Avenue, NY 10001</p>
+                    <p>(555) 123-4567</p>
+                    <p>hello@retroverse.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 RetroVerse Arcade. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location - RetroVerse Arcade</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .info-box {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .info-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 25px;
+        }
+
+        .info-item i {
+            font-size: 1.5rem;
+            color: var(--secondary-color);
+            margin-right: 20px;
+            margin-top: 5px;
+        }
+
+        .map-container {
+            width: 100%;
+            height: 100%;
+            min-height: 400px;
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+            filter: grayscale(100%) invert(90%);
+            /* Dark mode map hack */
+        }
+
+        @media (max-width: 768px) {
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body data-theme="dark">
+
+    <div class="scroll-top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
+
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo"><i class="fa-solid fa-gamepad"></i> RetroVerse</a>
+                <button class="menu-toggle"><i class="fa-solid fa-bars"></i></button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="games.html">Games</a></li>
+                    <li><a href="parties.html">Parties</a></li>
+                    <li><a href="location.html" class="active">Location</a></li>
+                </ul>
+                <button class="theme-toggle"><i class="fa-solid fa-sun"></i></button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container" style="padding-top: 100px;">
+        <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 20px;">Find Us</h2>
+        <p style="text-align: center; margin-bottom: 40px; opacity: 0.8;">Come visit us at the heart of the city.</p>
+
+        <div class="info-grid">
+            <div class="info-box">
+                <h3 style="margin-bottom: 30px;">Contact & Hours</h3>
+
+                <div class="info-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div>
+                        <h4>Address</h4>
+                        <p>123 Neon Avenue<br>Arcade District, NY 10001</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class="fa-solid fa-clock"></i>
+                    <div>
+                        <h4>Opening Hours</h4>
+                        <p>Mon - Thu: 12pm - 10pm<br>Fri - Sat: 12pm - 2am<br>Sun: 12pm - 11pm</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <div>
+                        <h4>Phone</h4>
+                        <p>(555) 123 - 4567</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div>
+                        <h4>Email</h4>
+                        <p>hello@retroverse.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="map-container">
+                <!-- Google Map Embed -->
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830869428!2d-74.119763973046!3d40.69766374874431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sca!4v1684351333321!5m2!1sen!2sca"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section" style="margin-top: 60px;">
+        <div class="container">
+            <h2 class="text-center">Local Reviews</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                    <p>"This place is a gem in the neighborhood. Safe, fun, and affordable."</p>
+                    <h4 style="margin-top: 15px;">- Local Resident</h4>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                    <p>"Great spot for dates. The location is easy to get to and lots of parking."</p>
+                    <h4 style="margin-top: 15px;">- Jordan B.</h4>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                    <p>"I travel an hour just to play the Rhythm games here. Totally worth it."</p>
+                    <h4 style="margin-top: 15px;">- Casey M.</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="container section-padding">
+        <div class="newsletter-box">
+            <h2>Join the VIP Club</h2>
+            <p>Get exclusive coupons, early access to new games, and invites to member-only tournaments.</p>
+            <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Welcome to the club!');">
+                <input type="email" class="newsletter-input" placeholder="Enter your email" required>
+                <button type="submit" class="btn btn-light">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo" style="margin-bottom: 15px; display: inline-block;">RetroVerse</a>
+                    <p>The ultimate destination for arcade gaming, parties, and retro vibes.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="games.html">Games</a></li>
+                        <li><a href="parties.html">Parties</a></li>
+                        <li><a href="location.html">Location</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p>123 Neon Avenue, NY 10001</p>
+                    <p>(555) 123-4567</p>
+                    <p>hello@retroverse.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 RetroVerse Arcade. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parties - RetroVerse Arcade</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body data-theme="dark">
+
+    <div class="scroll-top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
+
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo"><i class="fa-solid fa-gamepad"></i> RetroVerse</a>
+                <button class="menu-toggle"><i class="fa-solid fa-bars"></i></button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="games.html">Games</a></li>
+                    <li><a href="parties.html" class="active">Parties</a></li>
+                    <li><a href="location.html">Location</a></li>
+                </ul>
+                <button class="theme-toggle"><i class="fa-solid fa-sun"></i></button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container" style="padding-top: 100px;">
+        <div class="text-center" style="max-width: 700px; margin: 0 auto 60px;">
+            <h2 style="font-size: 2.5rem; margin-bottom: 20px;">Level Up Your Celebration</h2>
+            <p style="opacity: 0.8; font-size: 1.1rem;">
+                Birthday bash? Corporate event? Just a Friday night with the squad? We've got the space and the games to
+                make it legendary.
+            </p>
+        </div>
+
+        <!-- Amenities Section -->
+        <div class="amenities-section">
+            <h3 class="text-center">Included With Every Party</h3>
+            <div class="amenities-grid">
+                <div class="amenity-item">
+                    <div class="amenity-icon"><i class="fa-solid fa-user-astronaut"></i></div>
+                    <h4>Dedicated Host</h4>
+                    <p>Your personal guide to fun.</p>
+                </div>
+                <div class="amenity-item">
+                    <div class="amenity-icon"><i class="fa-solid fa-pizza-slice"></i></div>
+                    <h4>Fresh Food</h4>
+                    <p>Pizza and drinks for the crew.</p>
+                </div>
+                <div class="amenity-item">
+                    <div class="amenity-icon"><i class="fa-solid fa-door-closed"></i></div>
+                    <h4>Private Room</h4>
+                    <p>A space to call your own.</p>
+                </div>
+                <div class="amenity-item">
+                    <div class="amenity-icon"><i class="fa-solid fa-gift"></i></div>
+                    <h4>Swag Bags</h4>
+                    <p>Little extras for the guests.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pricing Grid -->
+        <div class="pricing-grid">
+            <!-- Tier 1 -->
+            <div class="pricing-card">
+                <h3>The Squad</h3>
+                <div class="price">$199<span>/ 2 hours</span></div>
+                <p style="margin-bottom: 20px; opacity: 0.7;">Perfect for small groups.</p>
+                <ul class="features-list">
+                    <li><i class="fa-solid fa-check"></i> Up to 10 Guests</li>
+                    <li><i class="fa-solid fa-check"></i> Unlimited Free Play</li>
+                    <li><i class="fa-solid fa-check"></i> 2 Large Pizzas</li>
+                </ul>
+                <a href="#book" class="btn btn-secondary" style="width: 100%;">Book Now</a>
+            </div>
+
+            <!-- Tier 2 (Popular) -->
+            <div class="pricing-card popular">
+                <div class="popular-badge">High Score Choice</div>
+                <h3>Level Up</h3>
+                <div class="price">$299<span>/ 3 hours</span></div>
+                <p style="margin-bottom: 20px; opacity: 0.7;">Our most popular package.</p>
+                <ul class="features-list">
+                    <li><i class="fa-solid fa-check"></i> Up to 20 Guests</li>
+                    <li><i class="fa-solid fa-check"></i> Unlimited Free Play</li>
+                    <li><i class="fa-solid fa-check"></i> 4 Large Pizzas & Wings</li>
+                    <li><i class="fa-solid fa-check"></i> Extra 1 Hour of Play</li>
+                </ul>
+                <a href="#book" class="btn" style="width: 100%;">Book Now</a>
+            </div>
+
+            <!-- Tier 3 -->
+            <div class="pricing-card">
+                <h3>Total Takeover</h3>
+                <div class="price">$599<span>/ 4 hours</span></div>
+                <p style="margin-bottom: 20px; opacity: 0.7;">Closed to the public.</p>
+                <ul class="features-list">
+                    <li><i class="fa-solid fa-check"></i> Up to 50 Guests</li>
+                    <li><i class="fa-solid fa-check"></i> Exclusive Venue Access</li>
+                    <li><i class="fa-solid fa-check"></i> Full Buffet Catering</li>
+                    <li><i class="fa-solid fa-check"></i> Tournament Setup</li>
+                </ul>
+                <a href="#book" class="btn btn-secondary" style="width: 100%;">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Booking Form -->
+        <div id="book" class="contact-form">
+            <h3 style="margin-bottom: 20px; text-align: center;">Book Your Event</h3>
+            <form onsubmit="event.preventDefault(); alert('Thanks for your inquiry! We will contact you shortly.');">
+                <div class="form-group">
+                    <label class="form-label">Name</label>
+                    <input type="text" class="form-input" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Email</label>
+                    <input type="email" class="form-input" placeholder="your@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Package Interest</label>
+                    <div style="position: relative;">
+                        <select class="form-input" style="appearance: none; cursor: pointer;">
+                            <option>The Squad ($199)</option>
+                            <option selected>Level Up ($299)</option>
+                            <option>Total Takeover ($599)</option>
+                        </select>
+                        <i class="fa-solid fa-chevron-down"
+                            style="position: absolute; right: 15px; top: 15px; pointer-events: none; color: white;"></i>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Date</label>
+                    <input type="date" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Message (Optional)</label>
+                    <textarea class="form-input" rows="4" placeholder="Any special requests?"></textarea>
+                </div>
+                <button type="submit" class="btn" style="width: 100%;">Send Inquiry</button>
+            </form>
+        </div>
+
+    </main>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section" style="margin-top: 60px;">
+        <div class="container">
+            <h2 class="text-center">Party Reviews</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                    <p>"The host was amazing with the kids, and having the whole place to ourselves was so cool."</p>
+                    <h4 style="margin-top: 15px;">- Emily R.</h4>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                    <p>"Best corporate team building we've ever done. Beating the boss at Street Fighter was the
+                        highlight."</p>
+                    <h4 style="margin-top: 15px;">- Mark D.</h4>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                    <p>"The pizzas were surprisingly good! And the games worked flawlessly."</p>
+                    <h4 style="margin-top: 15px;">- Anita J.</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="container section-padding">
+        <div class="newsletter-box">
+            <h2>Join the VIP Club</h2>
+            <p>Get exclusive coupons, early access to new games, and invites to member-only tournaments.</p>
+            <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Welcome to the club!');">
+                <input type="email" class="newsletter-input" placeholder="Enter your email" required>
+                <button type="submit" class="btn btn-light">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo" style="margin-bottom: 15px; display: inline-block;">RetroVerse</a>
+                    <p>The ultimate destination for arcade gaming, parties, and retro vibes.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="games.html">Games</a></li>
+                        <li><a href="parties.html">Parties</a></li>
+                        <li><a href="location.html">Location</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p>123 Neon Avenue, NY 10001</p>
+                    <p>(555) 123-4567</p>
+                    <p>hello@retroverse.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 RetroVerse Arcade. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
