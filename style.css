@@ -726,6 +726,14 @@ nav {
     padding: 30px;
     border-radius: 16px;
     border-left: 4px solid var(--accent-color);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.testimonial-card h4 {
+    margin-top: auto;
+    padding-top: 15px;
 }
 
 .quote-icon {
@@ -790,6 +798,13 @@ nav {
     text-align: center;
     position: relative;
     transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.pricing-card .btn {
+    margin-top: auto;
 }
 
 .pricing-card.popular {
@@ -797,6 +812,11 @@ nav {
     transform: scale(1.05);
     z-index: 10;
     box-shadow: 0 0 30px rgba(106, 13, 173, 0.3);
+}
+
+.pricing-card.popular .btn {
+    margin-top: auto;
+    margin-bottom: 10px;
 }
 
 .pricing-card:hover {
