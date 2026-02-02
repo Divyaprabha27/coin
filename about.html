@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - RetroVerse Arcade</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🕹️</text></svg>">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@700;800&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Scroll Top Button -->
+    <div class="scroll-top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
+
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo"><i class="fa-solid fa-gamepad"></i> RetroVerse</a>
+                <button class="menu-toggle"><i class="fa-solid fa-bars"></i></button>
+                <ul class="nav-links">
+                    <li class="dropdown">
+                        <a href="index.html">Home <i class="fa-solid fa-chevron-down"
+                                style="font-size: 0.8em; margin-left: 5px;"></i></a>
+                        <div class="dropdown-content">
+                            <a href="index.html">Home 1</a>
+                            <a href="home2.html">Home 2</a>
+                        </div>
+                    </li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="games.html">Games</a></li>
+                    <li><a href="parties.html">Parties</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <button class="theme-toggle" aria-label="Toggle Dark Mode">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero"
+            style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;">
+            <div class="container">
+                <h1>The Story of RetroVerse</h1>
+                <p>Where pixelated memories meet the future of entertainment.</p>
+            </div>
+        </section>
+
+        <!-- Our Story (Split Section reuse) -->
+        <section class="testimonials-section section-padding">
+            <div class="container">
+                <div class="split-section">
+                    <div class="split-content">
+                        <h2>Born from the 80s</h2>
+                        <p>RetroVerse started as a garage collection of three renovated Pac-Man cabinets. Founded in
+                            2023, our mission was simple: bring back the authentic social experience of the arcade era.
+                        </p>
+                        <p>We spent years sourcing original boards, calibrating CRTs, and curating a collection that
+                            spans four decades of gaming history. But we didn't stop there. We added a modern twist with
+                            VR lounges and craft cocktails to elevate the experience for the adult gamer.</p>
+                    </div>
+                    <div class="split-image">
+                        <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            alt="Retro Arcade Interior">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission & Values (Card Grid reuse) -->
+        <section class="container section-padding">
+            <h2 class="text-center" style="margin-bottom: 50px;">Our Core Values</h2>
+            <div class="games-grid">
+                <div class="card" style="text-align: center; padding: 20px;">
+                    <br>
+                    <i class="fa-solid fa-users"
+                        style="font-size: 3rem; color: var(--secondary-color); margin-bottom: 20px;"></i>
+                    <div class="card-content">
+                        <h3 class="card-title">Community</h3>
+                        <p>Gaming is better together. We build spaces where strangers become high-score rivals and
+                            friends.</p>
+                    </div>
+                </div>
+                <div class="card" style="text-align: center; padding: 20px;">
+                    <br>
+                    <i class="fa-solid fa-ghost"
+                        style="font-size: 3rem; color: var(--secondary-color); margin-bottom: 20px;"></i>
+                    <div class="card-content">
+                        <h3 class="card-title">Nostalgia</h3>
+                        <p>Preserving the art of the arcade. Every button press and joystick click should feel just like
+                            you remember.</p>
+                    </div>
+                </div>
+                <div class="card" style="text-align: center; padding: 20px;">
+                    <br>
+                    <i class="fa-solid fa-rocket"
+                        style="font-size: 3rem; color: var(--secondary-color); margin-bottom: 20px;"></i>
+                    <div class="card-content">
+                        <h3 class="card-title">Innovation</h3>
+                        <p>Respecting the past while embracing the future. We integrate cutting-edge VR alongside the
+                            classics.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section (Card Grid reuse) -->
+        <section class="container section-padding" style="padding-bottom: 150px;">
+            <h2 class="text-center" style="margin-bottom: 50px;">Meet the Team</h2>
+            <div class="games-grid">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Founder" class="card-img">
+                    <div class="card-content">
+                        <h3 class="card-title">James Halliday</h3>
+                        <p style="color: var(--primary-color); font-weight: bold;">Founder & CEO</p>
+                        <p>Lifelong gamer and collector. His vision started it all.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Tech Lead" class="card-img">
+                    <div class="card-content">
+                        <h3 class="card-title">Samantha Evo</h3>
+                        <p style="color: var(--primary-color); font-weight: bold;">Head Technician</p>
+                        <p>The wizard who keeps 40-year-old hardware running like new.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Events Manager" class="card-img">
+                    <div class="card-content">
+                        <h3 class="card-title">Marcus Ren</h3>
+                        <p style="color: var(--primary-color); font-weight: bold;">Events Manager</p>
+                        <p>Mastermind behind our legendary tournaments and parties.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="container section-padding">
+            <div class="newsletter-box">
+                <h2>Join the VIP Club</h2>
+                <p>Get exclusive coupons, early access to new games, and invites to member-only tournaments.</p>
+                <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Welcome to the club!');">
+                    <input type="email" class="newsletter-input" placeholder="Enter your email" required>
+                    <button type="submit" class="btn btn-light">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo" style="margin-bottom: 15px; display: inline-block;"><i
+                            class="fa-solid fa-gamepad"></i> RetroVerse</a>
+                    <p>The ultimate destination for arcade gaming, parties, and retro vibes.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="games.html">Games</a></li>
+                        <li><a href="parties.html">Parties</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p>123 Neon Avenue, NY 10001</p>
+                    <p>(555) 123-4567</p>
+                    <p>hello@retroverse.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 RetroVerse Arcade. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

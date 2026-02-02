@@ -65,7 +65,7 @@ function initMobileMenu() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    const savedTheme = localStorage.getItem('theme') || 'dark';
+    const savedTheme = localStorage.getItem('theme') || 'light';
     document.body.setAttribute('data-theme', savedTheme);
     updateIcon(savedTheme);
 
