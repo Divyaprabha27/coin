@@ -417,25 +417,27 @@ h3 {
 }
 
 .mb-4 {
-    margin-bottom: 2rem;
+margin-bottom: 2rem;
 }
 
 .btn {
-    display: inline-block;
-    padding: 10px 24px;
-    background-color: var(--primary-color);
-    color: white;
-    text-decoration: none;
-    border-radius: 30px;
-    font-weight: 600;
-    transition: transform 0.2s, box-shadow 0.2s;
-    border: none;
-    cursor: pointer;
+display: inline-block;
+padding: 10px 20px;
+background-color: var(--primary-color);
+color: white;
+text-decoration: none;
+border-radius: 30px;
+font-weight: 600;
+transition: transform 0.2s, box-shadow 0.2s;
+border: none;
+cursor: pointer;
+max-width: 200px;
+text-align: center;
 }
 
 .btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 15px var(--primary-color);
+transform: translateY(-2px);
+box-shadow: 0 4px 15px var(--primary-color);
 }
 
 .btn-secondary {
@@ -568,6 +570,17 @@ nav {
     /* Make border white for maximum contrast, or keep secondary? User said 'visible'. White is safest. */
 }
 
+.home-variant-2 .hero-split .btn-secondary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+    background-color: white;
+}
+
+.home-variant-2 .hero-split .btn-secondary:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
 .hero .btn-secondary:hover {
     background-color: white;
     color: var(--primary-color);
@@ -649,6 +662,11 @@ nav {
     font-size: 1.1rem;
     opacity: 0.9;
     margin-bottom: 20px;
+}
+
+.split-content .btn {
+    display: block;
+    margin: 0 auto;
 }
 
 .split-image {
