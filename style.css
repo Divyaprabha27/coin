@@ -343,12 +343,33 @@
     text-decoration: none;
     display: block;
     transition: background-color 0.2s;
+    position: relative;
 }
 
 .dropdown-content a:hover {
     background-color: var(--primary-color);
     color: white;
 }
+
+.dropdown-content a.active {
+    color: var(--accent-color);
+}
+
+.dropdown-content a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--accent-color);
+    transition: width 0.3s;
+}
+
+.dropdown-content a.active::after {
+    width: 100%;
+}
+
 
 .dropdown:hover .dropdown-content {
     display: block;
@@ -1355,6 +1376,59 @@ footer {
         min-width: auto;
     }
 
+    /* Flatten Dropdown on Mobile */
+    .dropdown>a {
+        display: none;
+    }
+
+    .dropdown-content {
+        display: flex;
+        flex-direction: column;
+        position: static;
+        box-shadow: none;
+        background: transparent;
+        border: none;
+        width: 100%;
+        padding: 0;
+        min-width: auto;
+        overflow: visible;
+    }
+
+    .dropdown-content a {
+        display: block;
+        width: fit-content;
+        padding: 10px 0;
+        margin: 0 auto;
+        font-weight: 500;
+        color: var(--text-color);
+        opacity: 1;
+        text-align: center;
+        text-decoration: none;
+        position: relative;
+    }
+
+    .dropdown-content a.active {
+        color: var(--accent-color);
+    }
+
+    /* Ensure underline shows on mobile */
+    .dropdown-content a.active::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: var(--accent-color);
+    }
+
+    .nav-links li.dropdown {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
 }
 
 /* Authentication Pages */
@@ -1366,7 +1440,7 @@ footer {
     background: linear-gradient(135deg, rgba(106, 13, 173, 0.1), rgba(0, 212, 255, 0.1));
 }
 
-.theme-toggle {
+body>.theme-toggle {
     position: fixed;
     top: 10px;
     right: 20px;
@@ -1385,7 +1459,7 @@ footer {
     font-size: 1.2rem;
 }
 
-.theme-toggle:hover {
+body>.theme-toggle:hover {
     transform: scale(1.1);
     background: var(--primary-color);
     color: white;
@@ -1418,7 +1492,7 @@ footer {
     color: #ffffff;
 }
 
-[data-theme="dark"] .theme-toggle {
+[data-theme="dark"] body>.theme-toggle {
     background: #2a2a2a;
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
