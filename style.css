@@ -316,11 +316,41 @@
     .home-variant-2 .container.expanded-width {
         flex-direction: column;
         text-align: center;
+        justify-content: center;
+        padding: 0 20px;
     }
 
     .home-variant-2 .hero-content {
         padding-left: 0;
         margin-bottom: 40px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .home-variant-2 .hero-content h1 {
+        text-align: center;
+    }
+
+    .home-variant-2 .hero-content p {
+        text-align: center;
+        max-width: 600px;
+        margin: 0 auto 30px;
+    }
+
+    .home-variant-2 .hero-btns {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .home-variant-2 .hero-visual {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .featured-grid {
@@ -503,6 +533,7 @@ nav {
     display: flex;
     gap: 30px;
     list-style: none;
+    align-items: center;
 }
 
 .nav-links a {
@@ -562,6 +593,8 @@ nav {
     padding: 8px 16px;
     font-size: 0.9rem;
     margin: 0 10px;
+    vertical-align: middle;
+    display: inline-block;
 }
 
 .btn-signin:hover {
@@ -1256,6 +1289,29 @@ nav {
     .hero h1 {
         font-size: 3rem;
     }
+
+    /* Home2 tablet specific styles */
+    .home-variant-2 .hero-split {
+        height: auto;
+        min-height: 90vh;
+    }
+
+    .home-variant-2 .container.expanded-width {
+        max-width: 1200px;
+        gap: 40px;
+    }
+
+    .home-variant-2 .hero-content h1 {
+        font-size: 4rem;
+    }
+
+    .home-variant-2 .hero-content p {
+        max-width: 500px;
+    }
+
+    .home-variant-2 .hero-img-3d {
+        max-width: 400px;
+    }
 }
 
 /* Footer (New 4-Column) */
@@ -1338,6 +1394,54 @@ footer {
 @media (max-width: 768px) {
     .hero h1 {
         font-size: 2.5rem;
+    }
+
+    /* Home2 specific mobile styles */
+    .home-variant-2 .hero-split {
+        height: auto;
+        min-height: 100vh;
+        padding: 100px 0 80px;
+    }
+
+    .home-variant-2 .container.expanded-width {
+        padding: 0 15px;
+        gap: 30px;
+    }
+
+    .home-variant-2 .hero-content {
+        margin-bottom: 30px;
+    }
+
+    .home-variant-2 .hero-content h1 {
+        font-size: 3rem;
+        line-height: 1.1;
+        margin-bottom: 20px;
+    }
+
+    .home-variant-2 .hero-content p {
+        font-size: 1.1rem;
+        margin: 0 auto 25px;
+    }
+
+    .home-variant-2 .hero-btns {
+        gap: 12px;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .home-variant-2 .hero-btns .btn {
+        width: 100%;
+        padding: 12px 24px;
+    }
+
+    .home-variant-2 .hero-visual {
+        margin-top: 20px;
+    }
+
+    .home-variant-2 .hero-img-3d {
+        max-width: 350px;
+        width: 100%;
+        height: auto;
     }
 
     .nav-links {
@@ -1799,14 +1903,66 @@ body>.theme-toggle:hover {
     color: var(--accent-color);
 }
 
-@media (max-width: 768px) {
-    .auth-card {
-        padding: 30px 20px;
-        margin: 20px;
+/* Tablet Responsive Styles for Auth Pages */
+@media (max-width: 1024px) {
+    .auth-container {
+        max-width: 600px;
+        padding: 0 20px;
     }
 
-    .auth-header h1 {
+    .auth-card {
+        padding: 40px 30px;
+        max-width: 600px;
+    }
+
+    .auth-header h3 {
+        font-size: 1.8rem;
+    }
+
+    .form-row {
+        gap: 20px;
+    }
+
+    .social-btn {
+        min-width: 160px;
+        padding: 10px 16px;
+        font-size: 0.9rem;
+    }
+
+    .auth-btn {
+        width: 70%;
+        padding: 12px;
+    }
+}
+
+/* Mobile Responsive Styles for Auth Pages */
+@media (max-width: 768px) {
+    .auth-section {
+        padding: 40px 0;
+    }
+
+    .auth-container {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+
+    .auth-card {
+        padding: 30px 20px;
+        margin: 0;
+        border-radius: 15px;
+    }
+
+    .auth-header {
+        margin-bottom: 25px;
+    }
+
+    .auth-header h3 {
         font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+
+    .auth-form {
+        margin-bottom: 25px;
     }
 
     .form-row {
@@ -1814,7 +1970,110 @@ body>.theme-toggle:hover {
         gap: 0;
     }
 
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .auth-form .form-input {
+        padding: 16px 18px 16px 45px;
+        font-size: 16px; /* Prevents zoom on iOS */
+    }
+
+    .input-icon {
+        left: 18px;
+        font-size: 1.1rem;
+    }
+
+    .password-toggle {
+        right: 18px;
+        font-size: 1.1rem;
+    }
+
+    .form-options {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+
+    .checkbox-label {
+        font-size: 0.95rem;
+    }
+
+    .forgot-link {
+        font-size: 0.95rem;
+    }
+
+    .auth-btn {
+        width: 100%;
+        padding: 14px;
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    .auth-divider {
+        margin: 25px 0;
+    }
+
     .social-auth {
         flex-direction: column;
+        gap: 12px;
+        margin-bottom: 25px;
+    }
+
+    .social-btn {
+        width: 100%;
+        min-width: auto;
+        padding: 14px 20px;
+        font-size: 1rem;
+    }
+
+    .auth-footer {
+        padding-top: 20px;
+    }
+
+    .auth-footer p {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+}
+
+/* Small Mobile Responsive Styles */
+@media (max-width: 480px) {
+    .auth-section {
+        padding: 20px 0;
+    }
+
+    .auth-card {
+        padding: 25px 15px;
+        margin: 0 10px;
+    }
+
+    .auth-header h3 {
+        font-size: 1.3rem;
+    }
+
+    .auth-form .form-input {
+        padding: 14px 16px 14px 40px;
+    }
+
+    .input-icon {
+        left: 15px;
+        font-size: 1rem;
+    }
+
+    .password-toggle {
+        right: 15px;
+        font-size: 1rem;
+    }
+
+    .social-btn {
+        padding: 12px 16px;
+        font-size: 0.95rem;
+    }
+
+    .auth-btn {
+        padding: 12px;
+        font-size: 0.95rem;
     }
 }
