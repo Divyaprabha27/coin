@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RetroVerse Arcade - Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🕹️</text></svg>">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@700;800&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Scroll Top Button -->
+    <div class="scroll-top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
+
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo"><i class="fa-solid fa-gamepad"></i> RetroVerse</a>
+                <button class="menu-toggle"><i class="fa-solid fa-bars"></i></button>
+                <ul class="nav-links">
+                    <li class="dropdown">
+                        <a href="index.html">Home <i class="fa-solid fa-chevron-down"
+                                style="font-size: 0.8em; margin-left: 5px;"></i></a>
+                        <div class="dropdown-content">
+                            <a href="index.html">Home 1</a>
+                            <a href="home2.html">Home 2</a>
+                        </div>
+                    </li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="games.html">Games</a></li>
+                    <li><a href="parties.html">Parties</a></li>
+                    <li><a href="shop.html" class="active">Shop</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <button class="theme-toggle" aria-label="Toggle Dark Mode">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <a href="signin.html" class="btn btn-signin">Sign In</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1 class="glitch-text" data-text="Retro Gear Shop">Retro Gear Shop</h1>
+                <p>Level up your style with exclusive RetroVerse merchandise, gaming accessories, and collectibles.</p>
+                <div class="hero-btns">
+                    <a href="#featured" class="btn">Featured Items</a>
+                    <a href="#categories" class="btn btn-secondary">Browse Categories</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Shop Categories -->
+        <section class="container section-padding" id="categories">
+            <h2 class="text-center">Shop Categories</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fa-solid fa-tshirt"></i>
+                    </div>
+                    <h3>Apparel</h3>
+                    <p>T-shirts, hoodies, and accessories</p>
+                    <a href="#apparel" class="btn btn-secondary">Shop Now</a>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fa-solid fa-gamepad"></i>
+                    </div>
+                    <h3>Gaming Gear</h3>
+                    <p>Controllers, headsets, and accessories</p>
+                    <a href="#gaming" class="btn btn-secondary">Shop Now</a>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fa-solid fa-mug-hot"></i>
+                    </div>
+                    <h3>Collectibles</h3>
+                    <p>Mugs, posters, and memorabilia</p>
+                    <a href="#collectibles" class="btn btn-secondary">Shop Now</a>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fa-solid fa-gift"></i>
+                    </div>
+                    <h3>Gift Cards</h3>
+                    <p>Perfect for gamers and arcade lovers</p>
+                    <a href="#giftcards" class="btn btn-secondary">Shop Now</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Products -->
+        <section class="container section-padding" id="featured">
+            <h2 class="text-center">Featured Products</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=400&auto=format&fit=crop"
+                            alt="RetroVerse Hoodie">
+                        <div class="product-badge">New</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>RetroVerse Hoodie</h3>
+                        <p class="product-price">$45.99</p>
+                        <p class="product-description">Premium quality hoodie with embroidered logo</p>
+                        <button class="btn" style="width: 100%;">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?q=80&w=400&auto=format&fit=crop"
+                            alt="Gaming Controller">
+                        <div class="product-badge">Popular</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Retro Controller</h3>
+                        <p class="product-price">$59.99</p>
+                        <p class="product-description">Wireless controller with classic design</p>
+                        <button class="btn" style="width: 100%;">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://i.etsystatic.com/22033405/r/il/db214b/5053738371/il_fullxfull.5053738371_s2al.jpg"
+                            alt="Arcade Mug">
+                        <div class="product-badge">Limited</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Arcade Mug</h3>
+                        <p class="product-price">$12.99</p>
+                        <p class="product-description">Ceramic mug with pixel art design</p>
+                        <button class="btn" style="width: 100%;">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?q=80&w=400&auto=format&fit=crop"
+                            alt="Gaming Headset">
+                    </div>
+                    <div class="product-info">
+                        <h3>Gaming Headset</h3>
+                        <p class="product-price">$79.99</p>
+                        <p class="product-description">RGB headset with surround sound</p>
+                        <button class="btn" style="width: 100%;">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://i5.walmartimages.com/seo/Retro-Video-Game-Arcade-T-Shirt_99b508ef-9600-4e96-9a66-a6f149fdfbbf.8d6aca7fefa5bb9c71271c35c0922e49.jpeg"
+                            alt="Retro T-Shirt">
+                    </div>
+                    <div class="product-info">
+                        <h3>Retro T-Shirt</h3>
+                        <p class="product-price">$24.99</p>
+                        <p class="product-description">100% cotton with vintage arcade design</p>
+                        <button class="btn" style="width: 100%;">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://s3.amazonaws.com/production-webstore/973e939f-d40f-4ac9-8962-ac2bb3e9ff2c/images/widgets/retailwidget/dashboard/retailwidget.jpg"
+                            alt="Gift Card">
+                        <div class="product-badge">Hot</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Gift Card</h3>
+                        <p class="product-price">$25.00+</p>
+                        <p class="product-description">Digital gift card for arcade credits</p>
+                        <button class="btn" style="width: 100%;">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Special Offers -->
+        <section class="container section-padding">
+            <h2 class="text-center">Special Offers</h2>
+            <div class="offers-grid">
+                <div class="offer-card">
+                    <div class="offer-badge">-20% OFF</div>
+                    <h3>Bundle Deal</h3>
+                    <p>Get any 3 items and save 20%</p>
+                    <p class="offer-code">Code: BUNDLE20</p>
+                    <a href="#featured" class="btn">Shop Bundle</a>
+                </div>
+                <div class="offer-card">
+                    <div class="offer-badge">Free Shipping</div>
+                    <h3>Free Delivery</h3>
+                    <p>On orders over $50</p>
+                    <p class="offer-description">No code needed</p>
+                    <a href="#featured" class="btn">Shop Now</a>
+                </div>
+                <div class="offer-card">
+                    <div class="offer-badge">VIP Special</div>
+                    <h3>Member Exclusive</h3>
+                    <p>Extra 10% off for members</p>
+                    <p class="offer-code">Code: VIP10</p>
+                    <a href="#featured" class="btn">Shop Member Deal</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="container section-padding">
+            <div class="newsletter-box">
+                <h2>Get Shop Updates</h2>
+                <p>Be the first to know about new products, exclusive deals, and limited edition drops.</p>
+                <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thanks for subscribing!');">
+                    <input type="email" class="newsletter-input" placeholder="Enter your email" required>
+                    <button type="submit" class="btn btn-light">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo" style="margin-bottom: 15px; display: inline-block;"><i
+                            class="fa-solid fa-gamepad"></i> RetroVerse</a>
+                    <p>The ultimate destination for arcade gaming, parties, and retro vibes.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="games.html">Games</a></li>
+                        <li><a href="parties.html">Parties</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Shop</h4>
+                    <ul class="footer-links">
+                        <li><a href="#apparel">Apparel</a></li>
+                        <li><a href="#gaming">Gaming Gear</a></li>
+                        <li><a href="#collectibles">Collectibles</a></li>
+                        <li><a href="#giftcards">Gift Cards</a></li>
+                        <li><a href="#">Track Order</a></li>
+                        <li><a href="#">Returns</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 RetroVerse Arcade. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
