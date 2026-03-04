@@ -1459,6 +1459,19 @@ footer {
     font-size: 0.9rem;
 }
 
+/* Tablet View Footer Adjustment */
+@media (max-width: 1024px) {
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* Mobile */
 @media (max-width: 768px) {
     .hero h1 {
@@ -1548,14 +1561,13 @@ footer {
         display: flex;
         align-items: center;
         width: 100%;
-        justify-content: center;
+        justify-content: space-between;
         position: relative;
     }
 
     .logo {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
+        position: static;
+        transform: none;
         margin: 0;
         z-index: 10;
     }
@@ -2251,4 +2263,24 @@ body>.theme-toggle:hover {
 
 .team-section .card-title {
     margin-top: 15px;
+}
+
+/* Meet the Team Section - Light Mode Background */
+.team-section {
+    background-color: #f0e8fa;
+}
+
+/* Meet the Team Section - Dark Mode Background */
+[data-theme="dark"] .team-section {
+    background-color: #1a0d2e;
+}
+
+/* Special Offers Section - Light Mode Background */
+.special-offers-section {
+    background-color: #fff4e0;
+}
+
+/* Special Offers Section - Dark Mode Background */
+[data-theme="dark"] .special-offers-section {
+    background-color: #1a1200;
 }
